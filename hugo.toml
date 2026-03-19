@@ -10,6 +10,7 @@ publishDir = 'docs'
   themeColor = 'green'
   showMenuItems = 2
   dateFormat = '02/01/2006'
+  centerTheme = true
 
 [[menu.main]]
   identifier = 'about'
