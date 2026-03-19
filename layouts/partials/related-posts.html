@@ -1,6 +1,18 @@
 {{ $page := . }}
-{{ $related := where (where .Site.RegularPages "Section" $page.Section) "Tags" "intersect" $page.Tags }}
-{{ $related = without $related $page }}
+{{ $related := slice }}
+{{ range where .Site.RegularPages "Section" $page.Section }}
+  {{ if ne .Permalink $page.Permalink }}
+    {{ $hasTags := false }}
+    {{ range $tag := $page.Params.tags }}
+      {{ if in .Params.tags $tag }}
+        {{ $hasTags = true }}
+      {{ end }}
+    {{ end }}
+    {{ if $hasTags }}
+      {{ $related = $related | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 {{ if gt (len $related) 0 }}
 <div class="related-posts">
   <h3>Related Posts</h3>
