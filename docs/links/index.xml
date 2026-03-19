@@ -1,1 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Links on Mr Green's Linux Blog</title><link>https://mrgreen3.github.io/links/</link><description>Recent content in Links on Mr Green's Linux Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate/><atom:link href="https://mrgreen3.github.io/links/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Links on Mr Green&#39;s Linux Blog</title>
+    <link>https://mrgreen.blog/links/</link>
+    <description>Recent content in Links on Mr Green&#39;s Linux Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://mrgreen.blog/links/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

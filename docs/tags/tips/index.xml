@@ -1,5 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tips on Mr Green's Linux Blog</title><link>https://mrgreen3.github.io/tags/tips/</link><description>Recent content in Tips on Mr Green's Linux Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://mrgreen3.github.io/tags/tips/index.xml" rel="self" type="application/rss+xml"/><item><title>Welcome</title><link>https://mrgreen3.github.io/posts/welcome/</link><pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate><guid>https://mrgreen3.github.io/posts/welcome/</guid><description>&lt;p&gt;Welcome to the ArchBang &amp;amp; Linux blog. This is where I document my journey with ArchBang distribution, system configuration, and Linux tinkering.&lt;/p&gt;
-&lt;h2 id="what-to-expect"&gt;What to expect&lt;/h2&gt;
-&lt;p&gt;Posts here focus on practical ArchBang setups, Linux administration, configuration management, and the occasional deep dive into tools and workflows.&lt;/p&gt;
-&lt;p&gt;Whether you&amp;rsquo;re running ArchBang, Arch, or any Linux distro, hopefully you&amp;rsquo;ll find something useful here.&lt;/p&gt;
-&lt;p&gt;Stay minimal. Keep it simple.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tips on Mr Green&#39;s Linux Blog</title>
+    <link>https://mrgreen.blog/tags/tips/</link>
+    <description>Recent content in Tips on Mr Green&#39;s Linux Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://mrgreen.blog/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome</title>
+      <link>https://mrgreen.blog/posts/welcome/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://mrgreen.blog/posts/welcome/</guid>
+      <description>&lt;p&gt;Welcome to the ArchBang &amp;amp; Linux blog. This is where I document my journey with ArchBang distribution, system configuration, and Linux tinkering.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-to-expect&#34;&gt;What to expect&lt;/h2&gt;&#xA;&lt;p&gt;Posts here focus on practical ArchBang setups, Linux administration, configuration management, and the occasional deep dive into tools and workflows.&lt;/p&gt;&#xA;&lt;p&gt;Whether you&amp;rsquo;re running ArchBang, Arch, or any Linux distro, hopefully you&amp;rsquo;ll find something useful here.&lt;/p&gt;&#xA;&lt;p&gt;Stay minimal. Keep it simple.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
