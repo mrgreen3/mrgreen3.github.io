@@ -2,7 +2,7 @@
 title = "Welcome"
 date = "2026-03-19"
 author = "mrgreen"
-tags = ["archbang", "linux"]
+tags = ["linux", "tips"]
 keywords = ["archbang", "linux"]
 description = "Getting started with ArchBang and Linux configuration"
 showFullContent = false
