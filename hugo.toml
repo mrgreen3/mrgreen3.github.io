@@ -14,6 +14,7 @@ publishDir = 'docs'
   ReadMore = 'Read more'
   MenuMore = 'Show more'
   ReadOtherPosts = 'Read other posts'
+  footer = "© 2026 Mr Green. All rights reserved."
 
 [[menu.main]]
   identifier = 'about'
