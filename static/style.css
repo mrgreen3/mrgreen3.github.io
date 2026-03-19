@@ -114,3 +114,34 @@ code {
   text-decoration: underline;
   color: #5a8b6e;
 }
+
+/* Related posts styling */
+.related-posts {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-left: 3px solid #6b9f7f;
+  background-color: rgba(107, 159, 127, 0.05);
+}
+
+.related-posts h3 {
+  margin-top: 0;
+  color: #6b9f7f;
+}
+
+.related-posts ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.related-posts li {
+  margin: 0.5rem 0;
+}
+
+.related-posts a {
+  color: #6b9f7f;
+  text-decoration: none;
+}
+
+.related-posts a:hover {
+  text-decoration: underline;
+}

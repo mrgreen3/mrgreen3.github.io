@@ -1,0 +1,13 @@
+{{ $page := . }}
+{{ $related := where (where .Site.RegularPages "Section" $page.Section) "Tags" "intersect" $page.Tags }}
+{{ $related = without $related $page }}
+{{ if gt (len $related) 0 }}
+<div class="related-posts">
+  <h3>Related Posts</h3>
+  <ul>
+    {{ range first 3 $related }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
