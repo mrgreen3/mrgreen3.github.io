@@ -11,6 +11,9 @@ publishDir = 'docs'
   showMenuItems = 4
   dateFormat = '02/01/2006'
   centerTheme = true
+  ReadMore = 'Read more'
+  MenuMore = 'Show more'
+  ReadOtherPosts = 'Read other posts'
 
 [[menu.main]]
   identifier = 'about'
@@ -36,6 +39,10 @@ publishDir = 'docs'
   [languages.en]
     languageName = "English"
     title = "Mr Green's Linux Blog"
+    subtitle = "ArchBang & Linux"
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
 
     [languages.en.params]
       subtitle = "ArchBang & Linux"
