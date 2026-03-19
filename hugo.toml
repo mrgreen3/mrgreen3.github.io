@@ -1,4 +1,4 @@
-baseURL = 'https://mrgreen3.github.io/'
+baseURL = 'https://mrgreen.blog/'
 languageCode = 'en-us'
 title = 'ArchBang & Linux'
 theme = 'terminal'
