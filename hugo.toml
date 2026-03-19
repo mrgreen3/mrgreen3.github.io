@@ -21,6 +21,11 @@ publishDir = 'docs'
   name = 'Posts'
   url = '/posts'
 
+[[menu.main]]
+  identifier = 'links'
+  name = 'Links'
+  url = '/links'
+
 [languages]
   [languages.en]
     languageName = "English"
