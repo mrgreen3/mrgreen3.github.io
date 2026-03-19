@@ -7,8 +7,9 @@ publishDir = 'docs'
 
 [params]
   description = 'ArchBang, Linux, and system configuration'
-  themeColor = 'orange'
+  themeColor = 'green'
   showMenuItems = 2
+  dateFormat = '02/01/2006'
 
 [[menu.main]]
   identifier = 'about'
@@ -19,3 +20,15 @@ publishDir = 'docs'
   identifier = 'posts'
   name = 'Posts'
   url = '/posts'
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "Mr Green's Linux Blog"
+
+    [languages.en.params]
+      subtitle = "ArchBang & Linux"
+
+      [languages.en.params.logo]
+        logoText = "Mr Green's Linux"
+        logoHomeLink = "/"

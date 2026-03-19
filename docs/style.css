@@ -1,0 +1,80 @@
+/* Soft green color scheme override */
+:root {
+  --accent: #6b9f7f;
+  --accent-color: #6b9f7f;
+  --bright-accent: #7db896;
+}
+
+/* Link colors */
+a {
+  color: #6b9f7f;
+}
+
+a:hover {
+  color: #5a8b6e;
+}
+
+/* Post title links */
+.post-title a {
+  color: #6b9f7f;
+}
+
+.post-title a:hover {
+  color: #5a8b6e;
+}
+
+/* Tag colors */
+.post-tags a {
+  color: #6b9f7f;
+}
+
+.post-tags a:hover {
+  color: #5a8b6e;
+}
+
+/* Menu links */
+.menu a {
+  color: #6b9f7f;
+}
+
+.menu a:hover {
+  color: #5a8b6e;
+}
+
+/* Header underline/accent */
+.header {
+  border-color: #6b9f7f;
+}
+
+/* Read more button */
+.read-more {
+  border-color: #6b9f7f;
+  color: #6b9f7f;
+}
+
+.read-more:hover {
+  color: #fff;
+  background-color: #6b9f7f;
+}
+
+/* Pagination active */
+.pagination__item.active {
+  color: #6b9f7f;
+}
+
+/* Code block border/accent */
+code {
+  background-color: rgba(107, 159, 127, 0.1);
+  color: #6b9f7f;
+}
+
+/* Syntax highlighting accent */
+.chroma .k,
+.chroma .kc,
+.chroma .kd,
+.chroma .kn,
+.chroma .kp,
+.chroma .kr,
+.chroma .kt {
+  color: #6b9f7f;
+}
