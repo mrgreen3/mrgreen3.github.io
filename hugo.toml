@@ -26,6 +26,11 @@ publishDir = 'docs'
   name = 'Links'
   url = '/links'
 
+[[menu.main]]
+  identifier = 'archive'
+  name = 'Archive'
+  url = '/archive'
+
 [languages]
   [languages.en]
     languageName = "English"
