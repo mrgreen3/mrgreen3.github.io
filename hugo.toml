@@ -1,0 +1,21 @@
+baseURL = 'https://mrgreen3.github.io/'
+languageCode = 'en-us'
+title = 'ArchBang & Linux'
+theme = 'terminal'
+paginate = 10
+publishDir = 'docs'
+
+[params]
+  description = 'ArchBang, Linux, and system configuration'
+  themeColor = 'orange'
+  showMenuItems = 2
+
+[[menu.main]]
+  identifier = 'about'
+  name = 'About'
+  url = '/about'
+
+[[menu.main]]
+  identifier = 'posts'
+  name = 'Posts'
+  url = '/posts'
