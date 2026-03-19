@@ -4,6 +4,8 @@ date = "2026-03-19"
 draft = false
 +++
 
+# Archive
+
 All posts organized chronologically.
 
 ## 2026

@@ -4,6 +4,8 @@ draft = false
 title = 'Links'
 +++
 
+# Links
+
 Useful resources and links related to Linux, ArchBang, and system administration.
 
 ## Tools & Utilities
