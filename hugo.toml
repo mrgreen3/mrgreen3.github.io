@@ -8,7 +8,7 @@ publishDir = 'docs'
 [params]
   description = 'ArchBang, Linux, and system configuration'
   themeColor = 'green'
-  showMenuItems = 2
+  showMenuItems = 4
   dateFormat = '02/01/2006'
   centerTheme = true
 
