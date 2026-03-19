@@ -30,5 +30,5 @@ publishDir = 'docs'
       subtitle = "ArchBang & Linux"
 
       [languages.en.params.logo]
-        logoText = "Mr Green's Linux"
+        logoText = "mrgreen"
         logoHomeLink = "/"
