@@ -88,3 +88,29 @@ code {
 .chroma .kt {
   color: #6b9f7f;
 }
+
+/* Tag cloud styling */
+.tag-cloud {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid #6b9f7f;
+  font-size: 0.95rem;
+}
+
+.tag-cloud-label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #6b9f7f;
+}
+
+.tag-cloud .tag-link {
+  display: inline;
+  margin: 0 0.3rem;
+  color: #6b9f7f;
+  text-decoration: none;
+}
+
+.tag-cloud .tag-link:hover {
+  text-decoration: underline;
+  color: #5a8b6e;
+}

@@ -1,0 +1,10 @@
+{{ if .Site.Taxonomies.tags }}
+<div class="tag-cloud">
+  <p class="tag-cloud-label">Browse by tag:</p>
+  {{ $sorted := .Site.Taxonomies.tags.ByCount }}
+  {{ range $sorted }}
+    <a href="{{ .Page.RelPermalink }}" class="tag-link">{{ .Page.Title }}</a>
+    {{ if ne (index $sorted (add 1 (index $sorted .))) nil }} · {{ end }}
+  {{ end }}
+</div>
+{{ end }}
