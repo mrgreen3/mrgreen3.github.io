@@ -145,3 +145,21 @@ code {
 .related-posts a:hover {
   text-decoration: underline;
 }
+
+/* Footer contact styling */
+.footer-contact {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #6b9f7f;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-contact a {
+  color: #6b9f7f;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
