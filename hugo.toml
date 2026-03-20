@@ -1,14 +1,16 @@
 baseURL = 'https://mrgreen.blog/'
 languageCode = 'en-us'
 title = 'ArchBang & Linux'
-theme = 'terminal'
+theme = 'risotto'
 paginate = 10
 publishDir = 'docs'
 
 [params]
   description = 'ArchBang, Linux, and system configuration'
-  themeColor = 'green'
   showMenuItems = 4
+
+  [params.theme]
+    palette = 'custom-green'
   dateFormat = '02/01/2006'
   centerTheme = true
   ReadMore = 'Read more'

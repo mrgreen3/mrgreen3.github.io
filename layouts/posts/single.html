@@ -1,8 +1,0 @@
-{{ define "main" }}
-  <article class="post">
-    {{ .Content }}
-  </article>
-  {{ if gt (len .Params.tags) 0 }}
-    {{ partial "related-posts.html" . }}
-  {{ end }}
-{{ end }}
