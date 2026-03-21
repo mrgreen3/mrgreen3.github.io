@@ -1,5 +1,8 @@
 # Blog Publishing Conventions
 
+## Gmail
+Search query: label:greenblog from:mr.k.clarke@gmail.com is:unread
+
 ## Repository Structure
 - Posts go in: `content/posts/`
 - Filename format: `YYYY-MM-DD-slug-here.md`
