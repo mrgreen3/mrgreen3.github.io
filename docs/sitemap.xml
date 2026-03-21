@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://mrgreen.blog/</loc>
+    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrgreen.blog/posts/</loc>
+    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrgreen.blog/tags/</loc>
+    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrgreen.blog/tags/test/</loc>
+    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrgreen.blog/posts/2026-03-21-test-message/</loc>
+    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://mrgreen.blog/about/</loc>
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
@@ -12,15 +27,6 @@
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrgreen.blog/tags/linux/</loc>
-    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrgreen.blog/</loc>
-    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrgreen.blog/posts/</loc>
-    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrgreen.blog/tags/</loc>
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrgreen.blog/tags/tips/</loc>
