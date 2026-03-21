@@ -12,7 +12,7 @@ Search query: label:greenblog from:mr.k.clarke@gmail.com is:unread
 ## Frontmatter Template
 +++
 title = 'Post Title Here'
-date = 'DD/MM/2026'
+date = "2026-03-21"
 draft = false
 tags = ['tag1', 'tag2']
 +++
