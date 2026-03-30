@@ -12,7 +12,7 @@ publishDir = 'docs'
   [params.theme]
     palette = 'custom-green'
   dateFormat = '02/01/2006'
-  centerTheme = true
+  centerTheme = false
   ReadMore = 'Read more'
   MenuMore = 'Show more'
   ReadOtherPosts = 'Read other posts'
