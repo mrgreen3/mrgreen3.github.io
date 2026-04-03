@@ -15,12 +15,5 @@
       <guid>https://mrgreen.blog/posts/2026-04-03-building-greenbang-wayland-alpine/</guid>
       <description>&lt;p&gt;I wanted a systemd-free version of ArchBang. Something minimal, keyboard-driven, and built on Alpine Linux instead. The name—GreenBang—references Alpine&amp;rsquo;s green branding and my own username, and it became the foundation for a distro that strips away the overhead while keeping the philosophy: intentional, lean, dark Wayland desktop with no cruft.&lt;/p&gt;&#xA;&lt;p&gt;That project is GreenBang, and it&amp;rsquo;s still very much in beta.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-alpine-why-wayland&#34;&gt;Why Alpine? Why Wayland?&lt;/h2&gt;&#xA;&lt;p&gt;Alpine is ruthlessly lean. A base ISO is measured in megabytes, not gigabytes. That&amp;rsquo;s the core philosophy here—do more with less. Wayland felt like the right move because X11 is aging, and if I&amp;rsquo;m building something new, why carry legacy baggage?&lt;/p&gt;</description>
     </item>
-    <item>
-      <title>Test Message</title>
-      <link>https://mrgreen.blog/posts/2026-03-21-test-message/</link>
-      <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://mrgreen.blog/posts/2026-03-21-test-message/</guid>
-      <description>&lt;p&gt;Test message 2&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Kev&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>
