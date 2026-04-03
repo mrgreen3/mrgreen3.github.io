@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><title>Building GreenBang: A Wayland-First Alpine Linux Live ISO &ndash; Mr Green&#39;s Linux Blog</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://mrgreen.blog/css/palettes/custom-green.css">
+<link rel="stylesheet" href="https://mrgreen.blog/css/risotto.css">
+<link rel="stylesheet" href="https://mrgreen.blog/css/custom.css">
+
+
+<link rel="icon" href="https://mrgreen.blog/favicon.ico">
+
+
+
+
+
+
+
+
+
+<meta property="og:title" content="Building GreenBang: A Wayland-First Alpine Linux Live ISO &ndash; Mr Green&#39;s Linux Blog" />
+<meta property="og:url" content="https://mrgreen.blog/posts/2026-04-03-building-greenbang-wayland-alpine/" />
+
+  
+
+<meta property="og:locale" content="en-us" />
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+      <li class="nomarker"><h1 class="page__logo"><a href="https://mrgreen.blog/" class="page__logo-inner">Mr Green&#39;s Linux Blog</a></h1></li>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://mrgreen.blog/about" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://mrgreen.blog/archive" title="">Archive</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://mrgreen.blog/links" title="">Links</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://mrgreen.blog/posts" title="">Posts</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Building GreenBang: A Wayland-First Alpine Linux Live ISO</h1>
+    </header>
+    <div class="content__body">
+        <p>I wanted a systemd-free version of ArchBang. Something minimal, keyboard-driven, and built on Alpine Linux instead. The name—GreenBang—references Alpine&rsquo;s green branding and my own username, and it became the foundation for a distro that strips away the overhead while keeping the philosophy: intentional, lean, dark Wayland desktop with no cruft.</p>
+<p>That project is GreenBang, and it&rsquo;s still very much in beta.</p>
+<h2 id="why-alpine-why-wayland">Why Alpine? Why Wayland?</h2>
+<p>Alpine is ruthlessly lean. A base ISO is measured in megabytes, not gigabytes. That&rsquo;s the core philosophy here—do more with less. Wayland felt like the right move because X11 is aging, and if I&rsquo;m building something new, why carry legacy baggage?</p>
+<p>The challenge: Alpine&rsquo;s build system is fundamentally different from anything I&rsquo;d worked with before. It uses <code>mkimage.sh</code> and overlays, not Arch&rsquo;s airootfs. Two separate files that have to stay in perfect sync: a profile that declares what packages exist on the ISO, and an overlay script that configures what actually loads at boot. Get them out of sync and packages silently fail to install. I learned that the hard way.</p>
+<h2 id="what-actually-works">What Actually Works</h2>
+<p>Right now, I can boot the ISO into a Wayland session. labwc starts. The user gets created. NetworkManager handles wired and wireless. waybar renders. foot terminal launches. It&rsquo;s <em>functional</em>. Not pretty yet, not complete, but it boots and does things.</p>
+<p>That took longer than it should have. Shell sourcing issues, missing dependencies, overlay structure gotchas—Alpine doesn&rsquo;t hold your hand the way some distros do. The documentation is thin. You read C code and source scripts to understand how things work.</p>
+<h2 id="whats-still-ahead">What&rsquo;s Still Ahead</h2>
+<p>Plenty. There are gaps to fill, configurations to polish, and a few things I want that aren&rsquo;t quite there yet. Some will land quickly. Others will take time. I&rsquo;d rather get it right than rush it out.</p>
+<h2 id="the-personal-part">The Personal Part</h2>
+<p>This is a side project, not a product. There&rsquo;s no timeline, no roadmap beyond &ldquo;make it usable.&rdquo; Some days I push a commit. Some days it sits. When I do work on it, I&rsquo;m usually testing builds in QEMU on a VM, iterating through failed boots and profile tweaks.</p>
+<p>I&rsquo;d be lying if I didn&rsquo;t mention that Claude Code has done most of the heavy lifting—building the profiles, wrangling the overlay scripts, debugging the alpine build system quirks. At first it felt like cheating. But the real work has been mine: understanding what&rsquo;s broken, knowing what the fix <em>should</em> look like, and directing the approach. That&rsquo;s where my Linux experience actually matters. Anyone can run a build. Actually knowing <em>why</em> it failed and what to try next? That part is still all me.</p>
+<p>It&rsquo;s therapeutic, honestly. In a world of bloated desktops and frameworks, there&rsquo;s something satisfying about making something minimal that&rsquo;s <em>yours</em>.</p>
+<p>GreenBang is very much work in progress. Until then, it&rsquo;s a thing I&rsquo;m building, learning Alpine&rsquo;s quirks, and slowly moving closer to something I&rsquo;d actually use as a daily driver.</p>
+
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+
+<ul class="aside__social-links">
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    
+    
+        <p>
+            
+            2026-04-03
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer"><p>
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+      
+      
+          
+            
+            
+                <br/><span class="active">$ echo $LANG<br/><b>English</b></span><br/>
+
+            
+          
+      
+    
+</p>
+<br /><br />
+<p class="copyright"></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>
