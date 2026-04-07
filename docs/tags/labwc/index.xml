@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Labwc on Mr Green&#39;s Linux Blog</title>
-    <link>https://mrgreen.blog/tags/labwc/</link>
-    <description>Recent content in Labwc on Mr Green&#39;s Linux Blog</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 03 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mrgreen.blog/tags/labwc/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Building GreenBang: A Wayland-First Alpine Linux Live ISO</title>
-      <link>https://mrgreen.blog/posts/2026-04-03-building-greenbang-wayland-alpine/</link>
-      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://mrgreen.blog/posts/2026-04-03-building-greenbang-wayland-alpine/</guid>
-      <description>&lt;p&gt;I wanted a systemd-free version of ArchBang. Something minimal, keyboard-driven, and built on Alpine Linux instead. The name—GreenBang—references Alpine&amp;rsquo;s green branding and my own username, and it became the foundation for a distro that strips away the overhead while keeping the philosophy: intentional, lean, dark Wayland desktop with no cruft.&lt;/p&gt;&#xA;&lt;p&gt;That project is GreenBang, and it&amp;rsquo;s still very much in beta.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-alpine-why-wayland&#34;&gt;Why Alpine? Why Wayland?&lt;/h2&gt;&#xA;&lt;p&gt;Alpine is ruthlessly lean. A base ISO is measured in megabytes, not gigabytes. That&amp;rsquo;s the core philosophy here—do more with less. Wayland felt like the right move because X11 is aging, and if I&amp;rsquo;m building something new, why carry legacy baggage?&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Labwc on Mr Green's Linux Blog</title><link>https://mrgreen.blog/tags/labwc/</link><description>Recent content in Labwc on Mr Green's Linux Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 03 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://mrgreen.blog/tags/labwc/index.xml" rel="self" type="application/rss+xml"/><item><title>Building GreenBang: A Wayland-First Alpine Linux Live ISO</title><link>https://mrgreen.blog/posts/2026-04-03-building-greenbang-wayland-alpine/</link><pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate><guid>https://mrgreen.blog/posts/2026-04-03-building-greenbang-wayland-alpine/</guid><description>&lt;p&gt;I wanted a systemd-free version of ArchBang. Something minimal, keyboard-driven, and built on Alpine Linux instead. The name—GreenBang—references Alpine&amp;rsquo;s green branding and my own username, and it became the foundation for a distro that strips away the overhead while keeping the philosophy: intentional, lean, dark Wayland desktop with no cruft.&lt;/p&gt;
+&lt;p&gt;That project is GreenBang, and it&amp;rsquo;s still very much in beta.&lt;/p&gt;
+&lt;h2 id="why-alpine-why-wayland"&gt;Why Alpine? Why Wayland?&lt;/h2&gt;
+&lt;p&gt;Alpine is ruthlessly lean. A base ISO is measured in megabytes, not gigabytes. That&amp;rsquo;s the core philosophy here—do more with less. Wayland felt like the right move because X11 is aging, and if I&amp;rsquo;m building something new, why carry legacy baggage?&lt;/p&gt;</description></item></channel></rss>
