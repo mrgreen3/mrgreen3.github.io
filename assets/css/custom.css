@@ -1,0 +1,11 @@
+:root {
+  --link: #22aa44;
+  --link-visited: #228844;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --link: #44dd66;
+    --link-visited: #33bb55;
+  }
+}
