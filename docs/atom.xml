@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Mr Green&#x27;s Linux Blog</title>
+    <subtitle>ArchBang &amp; Linux</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://mrgreen.blog/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://mrgreen.blog"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-04-03T00:00:00+00:00</updated>
+    <id>https://mrgreen.blog/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Building GreenBang: A Wayland-First Alpine Linux Live ISO</title>
+        <published>2026-04-03T00:00:00+00:00</published>
+        <updated>2026-04-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mrgreen.blog/building-greenbang-wayland-alpine/"/>
+        <id>https://mrgreen.blog/building-greenbang-wayland-alpine/</id>
+        
+        <content type="html" xml:base="https://mrgreen.blog/building-greenbang-wayland-alpine/">&lt;p&gt;I wanted a systemd-free version of ArchBang. Something minimal, keyboard-driven, and built on Alpine Linux instead. The name—GreenBang—references Alpine&#x27;s green branding and my own username, and it became the foundation for a distro that strips away the overhead while keeping the philosophy: intentional, lean, dark Wayland desktop with no cruft.&lt;&#x2F;p&gt;
+&lt;p&gt;That project is GreenBang, and it&#x27;s still very much in beta.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;why-alpine-why-wayland&quot;&gt;Why Alpine? Why Wayland?&lt;&#x2F;h2&gt;
+&lt;p&gt;Alpine is ruthlessly lean. A base ISO is measured in megabytes, not gigabytes. That&#x27;s the core philosophy here—do more with less. Wayland felt like the right move because X11 is aging, and if I&#x27;m building something new, why carry legacy baggage?&lt;&#x2F;p&gt;
+&lt;p&gt;The challenge: Alpine&#x27;s build system is fundamentally different from anything I&#x27;d worked with before. It uses &lt;code&gt;mkimage.sh&lt;&#x2F;code&gt; and overlays, not Arch&#x27;s airootfs. Two separate files that have to stay in perfect sync: a profile that declares what packages exist on the ISO, and an overlay script that configures what actually loads at boot. Get them out of sync and packages silently fail to install. I learned that the hard way.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-actually-works&quot;&gt;What Actually Works&lt;&#x2F;h2&gt;
+&lt;p&gt;Right now, I can boot the ISO into a Wayland session. labwc starts. The user gets created. NetworkManager handles wired and wireless. waybar renders. foot terminal launches. It&#x27;s &lt;em&gt;functional&lt;&#x2F;em&gt;. Not pretty yet, not complete, but it boots and does things.&lt;&#x2F;p&gt;
+&lt;p&gt;That took longer than it should have. Shell sourcing issues, missing dependencies, overlay structure gotchas—Alpine doesn&#x27;t hold your hand the way some distros do. The documentation is thin. You read C code and source scripts to understand how things work.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-s-still-ahead&quot;&gt;What&#x27;s Still Ahead&lt;&#x2F;h2&gt;
+&lt;p&gt;Plenty. There are gaps to fill, configurations to polish, and a few things I want that aren&#x27;t quite there yet. Some will land quickly. Others will take time. I&#x27;d rather get it right than rush it out.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-personal-part&quot;&gt;The Personal Part&lt;&#x2F;h2&gt;
+&lt;p&gt;This is a side project, not a product. There&#x27;s no timeline, no roadmap beyond &quot;make it usable.&quot; Some days I push a commit. Some days it sits. When I do work on it, I&#x27;m usually testing builds in QEMU on a VM, iterating through failed boots and profile tweaks.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;d be lying if I didn&#x27;t mention that Claude Code has done most of the heavy lifting—building the profiles, wrangling the overlay scripts, debugging the alpine build system quirks. At first it felt like cheating. But the real work has been mine: understanding what&#x27;s broken, knowing what the fix &lt;em&gt;should&lt;&#x2F;em&gt; look like, and directing the approach. That&#x27;s where my Linux experience actually matters. Anyone can run a build. Actually knowing &lt;em&gt;why&lt;&#x2F;em&gt; it failed and what to try next? That part is still all me.&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s therapeutic, honestly. In a world of bloated desktops and frameworks, there&#x27;s something satisfying about making something minimal that&#x27;s &lt;em&gt;yours&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;GreenBang is very much work in progress. Until then, it&#x27;s a thing I&#x27;m building, learning Alpine&#x27;s quirks, and slowly moving closer to something I&#x27;d actually use as a daily driver.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>About</title>
+        <published>2026-03-19T00:00:00+00:00</published>
+        <updated>2026-03-19T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mrgreen.blog/about/"/>
+        <id>https://mrgreen.blog/about/</id>
+        
+        <content type="html" xml:base="https://mrgreen.blog/about/">&lt;p&gt;Linux enthusiast focused on ArchBang, system configuration, and minimal workflows.&lt;&#x2F;p&gt;
+&lt;p&gt;This blog documents my experiments, setups, and discoveries as I work with Linux distributions and tools.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Links</title>
+        <published>2026-03-19T00:00:00+00:00</published>
+        <updated>2026-03-19T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mrgreen.blog/links/"/>
+        <id>https://mrgreen.blog/links/</id>
+        
+        <content type="html" xml:base="https://mrgreen.blog/links/">&lt;p&gt;Useful resources and links related to Linux, ArchBang, and system administration.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;tools-utilities&quot;&gt;Tools &amp;amp; Utilities&lt;&#x2F;h2&gt;
+&lt;p&gt;Essential software for Linux workflow:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;sway&lt;&#x2F;strong&gt; — Tiling Wayland compositor. Minimal, powerful window manager for X11&#x2F;Wayland.
+https:&#x2F;&#x2F;swaywm.org&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;alacritty&lt;&#x2F;strong&gt; — GPU-accelerated terminal emulator. Fast, simple, cross-platform.
+https:&#x2F;&#x2F;github.com&#x2F;alacritty&#x2F;alacritty&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;neovim&lt;&#x2F;strong&gt; — Hyperextensible Vim-based text editor. Modern, scriptable, fast.
+https:&#x2F;&#x2F;neovim.io&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;fish&lt;&#x2F;strong&gt; — User-friendly command line shell. Smart completions and syntax highlighting.
+https:&#x2F;&#x2F;fishshell.com&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;fzf&lt;&#x2F;strong&gt; — Fuzzy finder for command line. Search files, history, processes quickly.
+https:&#x2F;&#x2F;github.com&#x2F;junegunn&#x2F;fzf&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;communities&quot;&gt;Communities&lt;&#x2F;h2&gt;
+&lt;p&gt;Connect with Linux and ArchBang communities:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;r&#x2F;archlinux&lt;&#x2F;strong&gt; — Official Arch Linux subreddit. Ask questions, share setups, get help.
+https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;archlinux&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;r&#x2F;swaywm&lt;&#x2F;strong&gt; — Sway window manager community. Discussion, tips, rice screenshots.
+https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;swaywm&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Arch Linux Forums&lt;&#x2F;strong&gt; — Official support and discussion forums.
+https:&#x2F;&#x2F;bbs.archlinux.org&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;ArchBang Forum&lt;&#x2F;strong&gt; — ArchBang-specific community and support.
+https:&#x2F;&#x2F;archbang.org&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;curated-resources&quot;&gt;Curated Resources&lt;&#x2F;h2&gt;
+&lt;p&gt;Guides, documentation, and learning materials:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Arch Linux Wiki&lt;&#x2F;strong&gt; — Comprehensive documentation for Arch and ArchBang.
+https:&#x2F;&#x2F;wiki.archlinux.org&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Linux from Scratch&lt;&#x2F;strong&gt; — Build a Linux system from source. Deep learning resource.
+https:&#x2F;&#x2F;www.linuxfromscratch.org&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;The Linux Foundation&lt;&#x2F;strong&gt; — Official Linux news, kernel information, certifications.
+https:&#x2F;&#x2F;www.linuxfoundation.org&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Bash Guide for Beginners&lt;&#x2F;strong&gt; — Learn shell scripting fundamentals.
+https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;bash&#x2F;manual&#x2F;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;&lt;strong&gt;Last updated:&lt;&#x2F;strong&gt; 2026-03-19&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;This page is actively maintained. Found a great resource? Open an issue or let me know!&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -1,1 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://mrgreen.blog/tags/alpine/</loc><lastmod>2026-04-03T00:00:00+00:00</lastmod></url><url><loc>https://mrgreen.blog/posts/2026-04-03-building-greenbang-wayland-alpine/</loc><lastmod>2026-04-03T00:00:00+00:00</lastmod></url><url><loc>https://mrgreen.blog/tags/labwc/</loc><lastmod>2026-04-03T00:00:00+00:00</lastmod></url><url><loc>https://mrgreen.blog/tags/linux/</loc><lastmod>2026-04-03T00:00:00+00:00</lastmod></url><url><loc>https://mrgreen.blog/</loc><lastmod>2026-04-03T00:00:00+00:00</lastmod></url><url><loc>https://mrgreen.blog/posts/</loc><lastmod>2026-04-03T00:00:00+00:00</lastmod></url><url><loc>https://mrgreen.blog/tags/</loc><lastmod>2026-04-03T00:00:00+00:00</lastmod></url><url><loc>https://mrgreen.blog/tags/wayland/</loc><lastmod>2026-04-03T00:00:00+00:00</lastmod></url><url><loc>https://mrgreen.blog/about/</loc><lastmod>2026-03-19T00:00:00+00:00</lastmod></url><url><loc>https://mrgreen.blog/archive/</loc><lastmod>2026-03-19T00:00:00+00:00</lastmod></url><url><loc>https://mrgreen.blog/links/</loc><lastmod>2026-03-19T00:00:00+00:00</lastmod></url><url><loc>https://mrgreen.blog/categories/</loc></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://mrgreen.blog/</loc>
+    </url>
+    <url>
+        <loc>https://mrgreen.blog/about/</loc>
+        <lastmod>2026-03-19</lastmod>
+    </url>
+    <url>
+        <loc>https://mrgreen.blog/building-greenbang-wayland-alpine/</loc>
+        <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
+        <loc>https://mrgreen.blog/links/</loc>
+        <lastmod>2026-03-19</lastmod>
+    </url>
+    <url>
+        <loc>https://mrgreen.blog/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mrgreen.blog/tags/</loc>
+    </url>
+    <url>
+        <loc>https://mrgreen.blog/tags/alpine/</loc>
+    </url>
+    <url>
+        <loc>https://mrgreen.blog/tags/labwc/</loc>
+    </url>
+    <url>
+        <loc>https://mrgreen.blog/tags/linux/</loc>
+    </url>
+    <url>
+        <loc>https://mrgreen.blog/tags/wayland/</loc>
+    </url>
+</urlset>
