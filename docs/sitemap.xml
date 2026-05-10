@@ -16,6 +16,10 @@
         <lastmod>2026-03-19</lastmod>
     </url>
     <url>
+        <loc>https://mrgreen.blog/mango-window-manager/</loc>
+        <lastmod>2026-05-10</lastmod>
+    </url>
+    <url>
         <loc>https://mrgreen.blog/page/1/</loc>
     </url>
     <url>
@@ -25,6 +29,9 @@
         <loc>https://mrgreen.blog/tags/alpine/</loc>
     </url>
     <url>
+        <loc>https://mrgreen.blog/tags/desktop/</loc>
+    </url>
+    <url>
         <loc>https://mrgreen.blog/tags/labwc/</loc>
     </url>
     <url>
@@ -32,5 +39,8 @@
     </url>
     <url>
         <loc>https://mrgreen.blog/tags/wayland/</loc>
+    </url>
+    <url>
+        <loc>https://mrgreen.blog/tags/wm/</loc>
     </url>
 </urlset>

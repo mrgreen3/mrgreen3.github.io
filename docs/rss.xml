@@ -7,7 +7,53 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://mrgreen.blog/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Fri, 03 Apr 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 10 May 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Setting Up Mango WM on My Desktop</title>
+          <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://mrgreen.blog/mango-window-manager/</link>
+          <guid>https://mrgreen.blog/mango-window-manager/</guid>
+          <description xml:base="https://mrgreen.blog/mango-window-manager/">&lt;p&gt;My desktop is called mango. It made sense to run &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;DreamMaoMao&#x2F;mangowm&quot;&gt;Mango WM&lt;&#x2F;a&gt; on it.&lt;&#x2F;p&gt;
+&lt;p&gt;Mango WM is a Wayland compositor — tiling, tag-based, minimal. It sits in the same space as dwl but with a cleaner config format and a few quality-of-life additions that made it worth trying. No GNOME, no KDE, no compositor framework weighing things down. Just a window manager that does what I tell it.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;mango.png&quot; alt=&quot;mango desktop screenshot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-stack&quot;&gt;The Stack&lt;&#x2F;h2&gt;
+&lt;p&gt;Everything around the compositor is hand-picked:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;swaybg&lt;&#x2F;strong&gt; for the wallpaper — a beach photo that survived several config cleanups and earned its place&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;waybar&lt;&#x2F;strong&gt; for the panel — ext&#x2F;workspaces on the left, stats drawer in the centre, system tray on the right&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;mako&lt;&#x2F;strong&gt; for notifications — styled dark with a soft blue border, anchored top-right&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;rofi&lt;&#x2F;strong&gt; as the launcher — custom &lt;code&gt;mango.rasi&lt;&#x2F;code&gt; theme, 4px green border, JetBrains Mono, matches the rest of the setup&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;foot&lt;&#x2F;strong&gt; as the terminal&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;keybindings&quot;&gt;Keybindings&lt;&#x2F;h2&gt;
+&lt;p&gt;Everything runs through Super. No Alt conflicts, no guesswork:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Super+Return&lt;&#x2F;code&gt; — foot terminal&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Super+Space&lt;&#x2F;code&gt; — rofi launcher (via a wmenu-style wrapper)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Super+w&lt;&#x2F;code&gt; — Firefox&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Super+t&lt;&#x2F;code&gt; — Telegram&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Super+b&lt;&#x2F;code&gt; — GNOME Boxes&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Super+q&lt;&#x2F;code&gt; — kill window&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Super+f&lt;&#x2F;code&gt; — fullscreen&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Super+s&lt;&#x2F;code&gt; — float&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Super+1–9&lt;&#x2F;code&gt; — switch tags&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Super+Shift+1–9&lt;&#x2F;code&gt; — move window to tag&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Super+Shift+arrows&lt;&#x2F;code&gt; — focus direction&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Print&lt;&#x2F;code&gt; — full screenshot&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Super+Print&lt;&#x2F;code&gt; — region screenshot&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Screenshots land in &lt;code&gt;~&#x2F;Screenshots&#x2F;&lt;&#x2F;code&gt; with a timestamp filename and a notify-send confirmation.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;visual-tuning&quot;&gt;Visual Tuning&lt;&#x2F;h2&gt;
+&lt;p&gt;The defaults needed work. Animations were the first thing to go — all durations set to zero, layer animations disabled. The compositor feels snappier for it.&lt;&#x2F;p&gt;
+&lt;p&gt;Gaps are 3px all round. Focused windows get a soft green border (&lt;code&gt;0x88bb88ff&lt;&#x2F;code&gt;) — just visible enough to know what you&#x27;re looking at without shouting.&lt;&#x2F;p&gt;
+&lt;p&gt;Window rules assign apps to fixed tags automatically: Firefox to tag 3, Telegram to tag 2, GNOME Boxes to tag 4. The workspace is consistent every time.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-i-like-about-it&quot;&gt;What I Like About It&lt;&#x2F;h2&gt;
+&lt;p&gt;Tag-based layout suits the way I work. I don&#x27;t want infinite dynamic workspaces — I want a fixed map I can navigate without thinking. Mango handles that well.&lt;&#x2F;p&gt;
+&lt;p&gt;The config format is readable. Changes are fast to test. Compared to the yak-shaving involved in some other compositors, it&#x27;s been surprisingly low-friction once the initial setup was done.&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s not perfect. The ecosystem is smaller than Hyprland or sway. Documentation is thin in places. But for a personal desktop that I understand top to bottom, it works exactly as intended.&lt;&#x2F;p&gt;
+</description>
+      </item>
       <item>
           <title>Building GreenBang: A Wayland-First Alpine Linux Live ISO</title>
           <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>

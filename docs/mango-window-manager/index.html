@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mr Green&#x27;s Blog</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="robots" content="noodp"/>
+
+    <link rel="stylesheet" href="https://mrgreen.blog/style.css">
+    <link rel="stylesheet" href="https://mrgreen.blog/color/green.css">
+
+        <link rel="stylesheet" href="https://mrgreen.blog/color/background_dark.css">
+    
+    <link rel="stylesheet" href="https://mrgreen.blog/font-hack-subset.css">
+
+    <meta name="description" content="">
+
+    <meta property="og:description" content="">
+    <meta property="og:title" content="Mr Green's Blog">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://mrgreen.blog/mango-window-manager/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:title" content="Mr Green's Blog">
+    <meta property="twitter:domain" content="mrgreen.blog">
+    <meta property="twitter:url" content="https://mrgreen.blog/mango-window-manager/">
+
+                <link rel="alternate" type="application/rss+xml" title="Mr Green&#x27;s Blog RSS Feed" href="https://mrgreen.blog/rss.xml" />
+                <link rel="alternate" type="application/atom+xml" title="Mr Green&#x27;s Blog Atom Feed" href="https://mrgreen.blog/atom.xml" /><link rel="stylesheet" href="https://mrgreen.blog/custom.css">
+    </head>
+
+<body class="">
+<div class="container">
+    
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                    
+                <a href="https://mrgreen.blog" style="text-decoration: none;">
+                    <div class="logo">
+                      
+                            Mr Green&#x27;s Blog
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        
+        
+                <nav class="menu">
+            <ul class="menu__inner">
+                <li class="active"><a href="https://mrgreen.blog">blog</a></li>
+            
+                <li><a href="https://mrgreen.blog/tags">tags</a></li>
+            
+                <li><a href="https://mrgreen.blog/about">about</a></li>
+            
+                <li><a href="https://mrgreen.blog/links">links</a></li>
+            </ul>
+        </nav>
+    
+    
+        
+    </header>
+    
+
+    <div class="content">
+        
+    <div class="post">
+        
+    <h1 class="post-title"><a href="https://mrgreen.blog/mango-window-manager/">Setting Up Mango WM on My Desktop</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2026-05-10
+        </span>
+
+    </div>
+
+    
+        <span class="post-tags-inline">
+                :: tags:&nbsp;
+                <a class="post-tag" href="https://mrgreen.blog/tags/desktop/">#desktop</a>&nbsp;
+                <a class="post-tag" href="https://mrgreen.blog/tags/linux/">#linux</a>&nbsp;
+                <a class="post-tag" href="https://mrgreen.blog/tags/wayland/">#wayland</a>&nbsp;
+                <a class="post-tag" href="https://mrgreen.blog/tags/wm/">#wm</a></span>
+    
+
+        <div class="post-content">
+            <p>My desktop is called mango. It made sense to run <a rel="external" href="https://github.com/DreamMaoMao/mangowm">Mango WM</a> on it.</p>
+<p>Mango WM is a Wayland compositor — tiling, tag-based, minimal. It sits in the same space as dwl but with a cleaner config format and a few quality-of-life additions that made it worth trying. No GNOME, no KDE, no compositor framework weighing things down. Just a window manager that does what I tell it.</p>
+<p><img src="/mango.png" alt="mango desktop screenshot" /></p>
+<h2 id="the-stack">The Stack</h2>
+<p>Everything around the compositor is hand-picked:</p>
+<ul>
+<li><strong>swaybg</strong> for the wallpaper — a beach photo that survived several config cleanups and earned its place</li>
+<li><strong>waybar</strong> for the panel — ext/workspaces on the left, stats drawer in the centre, system tray on the right</li>
+<li><strong>mako</strong> for notifications — styled dark with a soft blue border, anchored top-right</li>
+<li><strong>rofi</strong> as the launcher — custom <code>mango.rasi</code> theme, 4px green border, JetBrains Mono, matches the rest of the setup</li>
+<li><strong>foot</strong> as the terminal</li>
+</ul>
+<h2 id="keybindings">Keybindings</h2>
+<p>Everything runs through Super. No Alt conflicts, no guesswork:</p>
+<ul>
+<li><code>Super+Return</code> — foot terminal</li>
+<li><code>Super+Space</code> — rofi launcher (via a wmenu-style wrapper)</li>
+<li><code>Super+w</code> — Firefox</li>
+<li><code>Super+t</code> — Telegram</li>
+<li><code>Super+b</code> — GNOME Boxes</li>
+<li><code>Super+q</code> — kill window</li>
+<li><code>Super+f</code> — fullscreen</li>
+<li><code>Super+s</code> — float</li>
+<li><code>Super+1–9</code> — switch tags</li>
+<li><code>Super+Shift+1–9</code> — move window to tag</li>
+<li><code>Super+Shift+arrows</code> — focus direction</li>
+<li><code>Print</code> — full screenshot</li>
+<li><code>Super+Print</code> — region screenshot</li>
+</ul>
+<p>Screenshots land in <code>~/Screenshots/</code> with a timestamp filename and a notify-send confirmation.</p>
+<h2 id="visual-tuning">Visual Tuning</h2>
+<p>The defaults needed work. Animations were the first thing to go — all durations set to zero, layer animations disabled. The compositor feels snappier for it.</p>
+<p>Gaps are 3px all round. Focused windows get a soft green border (<code>0x88bb88ff</code>) — just visible enough to know what you're looking at without shouting.</p>
+<p>Window rules assign apps to fixed tags automatically: Firefox to tag 3, Telegram to tag 2, GNOME Boxes to tag 4. The workspace is consistent every time.</p>
+<h2 id="what-i-like-about-it">What I Like About It</h2>
+<p>Tag-based layout suits the way I work. I don't want infinite dynamic workspaces — I want a fixed map I can navigate without thinking. Mango handles that well.</p>
+<p>The config format is readable. Changes are fast to test. Compared to the yak-shaving involved in some other compositors, it's been surprisingly low-friction once the initial setup was done.</p>
+<p>It's not perfect. The ecosystem is smaller than Hyprland or sway. Documentation is thin in places. But for a personal desktop that I understand top to bottom, it works exactly as intended.</p>
+
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Thanks for reading! Read other posts?</span>
+                    <hr />
+                </div>
+                <div class="pagination__buttons">
+                        <span class="button previous">
+                            <a href="https://mrgreen.blog/building-greenbang-wayland-alpine/">
+                                <span class="button__icon">←</span>&nbsp;
+                                <span class="button__text">Building GreenBang: A Wayland-First Alpine Linux Live ISO</span>
+                            </a>
+                        </span>
+                    
+                    </div>
+            </div>
+        
+    </div>
+
+    </div>
+
+    
+    <footer class="footer">
+        <div class="footer__inner">
+                <div class="copyright copyright--user">© 2026 Mr Green. All rights reserved.</div>
+            </div>
+    </footer>
+    
+
+</div>
+</body>
+
+</html>
