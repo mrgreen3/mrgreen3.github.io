@@ -32,14 +32,14 @@
 &lt;li&gt;&lt;strong&gt;swaybg&lt;&#x2F;strong&gt; for the wallpaper — a beach photo that survived several config cleanups and earned its place&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;waybar&lt;&#x2F;strong&gt; for the panel — ext&#x2F;workspaces on the left, stats drawer in the centre, system tray on the right&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;mako&lt;&#x2F;strong&gt; for notifications — styled dark with a soft blue border, anchored top-right&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;rofi&lt;&#x2F;strong&gt; as the launcher — custom &lt;code&gt;mango.rasi&lt;&#x2F;code&gt; theme, 4px green border, JetBrains Mono, matches the rest of the setup&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;wmenu&lt;&#x2F;strong&gt; as the launcher — lightweight, keyboard-driven, fits the minimal philosophy&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;foot&lt;&#x2F;strong&gt; as the terminal&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;keybindings&quot;&gt;Keybindings&lt;&#x2F;h2&gt;
 &lt;p&gt;Everything runs through Super. No Alt conflicts, no guesswork:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Super+Return&lt;&#x2F;code&gt; — foot terminal&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;code&gt;Super+Space&lt;&#x2F;code&gt; — rofi launcher (via a wmenu-style wrapper)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Super+Space&lt;&#x2F;code&gt; — wmenu launcher&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;code&gt;Super+w&lt;&#x2F;code&gt; — Firefox&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;code&gt;Super+t&lt;&#x2F;code&gt; — Telegram&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;code&gt;Super+b&lt;&#x2F;code&gt; — GNOME Boxes&lt;&#x2F;li&gt;

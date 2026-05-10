@@ -20,7 +20,7 @@ Everything around the compositor is hand-picked:
 - **swaybg** for the wallpaper — a beach photo that survived several config cleanups and earned its place
 - **waybar** for the panel — ext/workspaces on the left, stats drawer in the centre, system tray on the right
 - **mako** for notifications — styled dark with a soft blue border, anchored top-right
-- **rofi** as the launcher — custom `mango.rasi` theme, 4px green border, JetBrains Mono, matches the rest of the setup
+- **wmenu** as the launcher — lightweight, keyboard-driven, fits the minimal philosophy
 - **foot** as the terminal
 
 ## Keybindings
@@ -28,7 +28,7 @@ Everything around the compositor is hand-picked:
 Everything runs through Super. No Alt conflicts, no guesswork:
 
 - `Super+Return` — foot terminal
-- `Super+Space` — rofi launcher (via a wmenu-style wrapper)
+- `Super+Space` — wmenu launcher
 - `Super+w` — Firefox
 - `Super+t` — Telegram
 - `Super+b` — GNOME Boxes
