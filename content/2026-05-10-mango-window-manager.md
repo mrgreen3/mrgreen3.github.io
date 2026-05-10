@@ -7,9 +7,9 @@ draft = false
 tags = ["linux", "wayland", "wm", "desktop"]
 +++
 
-My desktop is called mango. It made sense to run [Mango WM](https://github.com/DreamMaoMao/mangowm) on it.
+My desktop is called mango. It made sense to run [Mango WM](https://github.com/DreamMaoMao/mangowm) on it. Thought I would try out a new dynamic window manager called MangoWM.
 
-Mango WM is a Wayland compositor — tiling, tag-based, minimal. It sits in the same space as dwl but with a cleaner config format and a few quality-of-life additions that made it worth trying. No GNOME, no KDE, no compositor framework weighing things down. Just a window manager that does what I tell it.
+It's a Wayland compositor — tiling, tag-based, minimal. It sits in the same space as dwl but with a cleaner config format and a few quality-of-life additions that made it worth trying. No GNOME, no KDE, no compositor framework weighing things down. Just a window manager that does what I tell it.
 
 ![mango desktop screenshot](/mango.png)
 

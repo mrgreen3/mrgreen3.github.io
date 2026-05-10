@@ -14,8 +14,8 @@
           <author>Unknown</author>
           <link>https://mrgreen.blog/mango-window-manager/</link>
           <guid>https://mrgreen.blog/mango-window-manager/</guid>
-          <description xml:base="https://mrgreen.blog/mango-window-manager/">&lt;p&gt;My desktop is called mango. It made sense to run &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;DreamMaoMao&#x2F;mangowm&quot;&gt;Mango WM&lt;&#x2F;a&gt; on it.&lt;&#x2F;p&gt;
-&lt;p&gt;Mango WM is a Wayland compositor — tiling, tag-based, minimal. It sits in the same space as dwl but with a cleaner config format and a few quality-of-life additions that made it worth trying. No GNOME, no KDE, no compositor framework weighing things down. Just a window manager that does what I tell it.&lt;&#x2F;p&gt;
+          <description xml:base="https://mrgreen.blog/mango-window-manager/">&lt;p&gt;My desktop is called mango. It made sense to run &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;DreamMaoMao&#x2F;mangowm&quot;&gt;Mango WM&lt;&#x2F;a&gt; on it. Thought I would try out a new dynamic window manager called MangoWM.&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s a Wayland compositor — tiling, tag-based, minimal. It sits in the same space as dwl but with a cleaner config format and a few quality-of-life additions that made it worth trying. No GNOME, no KDE, no compositor framework weighing things down. Just a window manager that does what I tell it.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;img src=&quot;&#x2F;mango.png&quot; alt=&quot;mango desktop screenshot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;the-stack&quot;&gt;The Stack&lt;&#x2F;h2&gt;
 &lt;p&gt;Everything around the compositor is hand-picked:&lt;&#x2F;p&gt;
