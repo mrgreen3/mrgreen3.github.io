@@ -23,7 +23,7 @@
         <link rel="alternate" type="text/html" href="https://mrgreen.blog/mango-window-manager/"/>
         <id>https://mrgreen.blog/mango-window-manager/</id>
         
-        <content type="html" xml:base="https://mrgreen.blog/mango-window-manager/">&lt;p&gt;Thought I would try out a new dynamic window manager called &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;DreamMaoMao&#x2F;mangowm&quot;&gt;MangoWM&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://mrgreen.blog/mango-window-manager/">&lt;p&gt;Thought I would try out a new dynamic window manager called &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;mangowm.github.io&#x2F;&quot;&gt;MangoWM&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;It&#x27;s a Wayland compositor — tiling, tag-based, minimal. It sits in the same space as dwl but with a cleaner config format and a few quality-of-life additions that made it worth trying. No GNOME, no KDE, no compositor framework weighing things down. Just a window manager that does what I tell it.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;img src=&quot;&#x2F;mango.png&quot; alt=&quot;mango desktop screenshot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;the-stack&quot;&gt;The Stack&lt;&#x2F;h2&gt;
