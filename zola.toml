@@ -1,6 +1,6 @@
 base_url = "https://mrgreen.blog"
-title = "Mr Green's Linux Blog"
-description = "ArchBang & Linux"
+title = "Mr Green's Blog"
+description = "Linux and other stuff"
 
 output_dir = "docs"
 
@@ -23,7 +23,7 @@ theme = "catppuccin-mocha"
 accent_color = "green"
 background_color = "dark"
 
-logo_text = "Mr Green's Linux Blog"
+logo_text = "Mr Green's Blog"
 author = "Mr Green"
 copyright_html = "© 2026 Mr Green. All rights reserved."
 

@@ -13,9 +13,16 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 .post-title a,
-.post-title,
-.logo {
+.post-title {
   color: var(--accent) !important;
+}
+
+.logo {
+  color: black !important;
+}
+
+.header__logo:after {
+  display: none;
 }
 
 a {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-      <title>Mr Green&#x27;s Linux Blog</title>
+      <title>Mr Green&#x27;s Blog</title>
       <link>https://mrgreen.blog</link>
-      <description>ArchBang &amp; Linux</description>
+      <description>Linux and other stuff</description>
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://mrgreen.blog/rss.xml" rel="self" type="application/rss+xml"/>
