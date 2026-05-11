@@ -1,0 +1,25 @@
+---
+steps:
+  - name: build
+    image: ghcr.io/getzola/zola:v0.22.1
+    commands:
+      - zola build --output-dir public
+
+  - name: deploy
+    image: alpine/git
+    environment:
+      CODEBERG_TOKEN:
+        from_secret: codeberg_token
+    commands:
+      - mkdir /tmp/deploy
+      - cp -r public/. /tmp/deploy/
+      - cd /tmp/deploy && git init
+      - cd /tmp/deploy && git config user.email "ci@codeberg.org"
+      - cd /tmp/deploy && git config user.name "Woodpecker CI"
+      - cd /tmp/deploy && git remote add origin https://$CI_REPO_OWNER:$CODEBERG_TOKEN@codeberg.org/$CI_REPO_OWNER/$CI_REPO_NAME.git
+      - cd /tmp/deploy && git add --all
+      - cd /tmp/deploy && git commit -m "deploy $(date -u +%Y-%m-%dT%H:%M:%SZ) [ci skip]"
+      - cd /tmp/deploy && git push origin HEAD:pages --force
+    when:
+      - event: push
+        branch: main
