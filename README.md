@@ -6,14 +6,15 @@ Built with [Zola](https://www.getzola.org/) 0.22.1 and the [terminimal](https://
 
 ## CI / Deployment
 
-Woodpecker CI builds and deploys on every push to `main`.
+Forgejo Actions builds and deploys on every push to `main`.
 
-Pipeline (`.woodpecker.yml`):
-1. Builds the site with `zola build --output-dir public`
-2. Force-pushes `public/` to the `pages` branch
-3. Codeberg Pages serves from the `pages` branch
+Pipeline (`.forgejo/workflows/deploy.yml`):
+1. Checks out repo including submodules
+2. Downloads Zola 0.22.1 and builds the site into `public/`
+3. Force-pushes `public/` to the `pages` branch
+4. Codeberg Pages serves from the `pages` branch
 
-**Required secret:** `codeberg_token` — a Codeberg access token with write access to this repo. Set it in the Woodpecker repo settings under Secrets.
+No extra secrets needed — uses the built-in `GITHUB_TOKEN`.
 
 ## Local build
 
