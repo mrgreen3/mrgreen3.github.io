@@ -9,52 +9,39 @@ Useful resources and links related to Linux, ArchBang, and system administration
 
 Essential software for Linux workflow:
 
-- **sway** — Tiling Wayland compositor. Minimal, powerful window manager for X11/Wayland.
-  https://swaywm.org
+- **[sway](https://swaywm.org)** — Tiling Wayland compositor. Minimal, powerful window manager for X11/Wayland.
 
-- **alacritty** — GPU-accelerated terminal emulator. Fast, simple, cross-platform.
-  https://github.com/alacritty/alacritty
+- **[alacritty](https://github.com/alacritty/alacritty)** — GPU-accelerated terminal emulator. Fast, simple, cross-platform.
 
-- **neovim** — Hyperextensible Vim-based text editor. Modern, scriptable, fast.
-  https://neovim.io
+- **[neovim](https://neovim.io)** — Hyperextensible Vim-based text editor. Modern, scriptable, fast.
 
-- **fish** — User-friendly command line shell. Smart completions and syntax highlighting.
-  https://fishshell.com
+- **[fish](https://fishshell.com)** — User-friendly command line shell. Smart completions and syntax highlighting.
 
-- **fzf** — Fuzzy finder for command line. Search files, history, processes quickly.
-  https://github.com/junegunn/fzf
+- **[fzf](https://github.com/junegunn/fzf)** — Fuzzy finder for command line. Search files, history, processes quickly.
 
 ## Communities
 
 Connect with Linux and ArchBang communities:
 
-- **r/archlinux** — Official Arch Linux subreddit. Ask questions, share setups, get help.
-  https://reddit.com/r/archlinux
+- **[r/archlinux](https://reddit.com/r/archlinux)** — Official Arch Linux subreddit. Ask questions, share setups, get help.
 
-- **r/swaywm** — Sway window manager community. Discussion, tips, rice screenshots.
-  https://reddit.com/r/swaywm
+- **[r/swaywm](https://reddit.com/r/swaywm)** — Sway window manager community. Discussion, tips, rice screenshots.
 
-- **Arch Linux Forums** — Official support and discussion forums.
-  https://bbs.archlinux.org
+- **[Arch Linux Forums](https://bbs.archlinux.org)** — Official support and discussion forums.
 
-- **ArchBang Forum** — ArchBang-specific community and support.
-  https://archbang.org
+- **[ArchBang Forum](https://archbang.org)** — ArchBang-specific community and support.
 
 ## Curated Resources
 
 Guides, documentation, and learning materials:
 
-- **Arch Linux Wiki** — Comprehensive documentation for Arch and ArchBang.
-  https://wiki.archlinux.org
+- **[Arch Linux Wiki](https://wiki.archlinux.org)** — Comprehensive documentation for Arch and ArchBang.
 
-- **Linux from Scratch** — Build a Linux system from source. Deep learning resource.
-  https://www.linuxfromscratch.org
+- **[Linux from Scratch](https://www.linuxfromscratch.org)** — Build a Linux system from source. Deep learning resource.
 
-- **The Linux Foundation** — Official Linux news, kernel information, certifications.
-  https://www.linuxfoundation.org
+- **[The Linux Foundation](https://www.linuxfoundation.org)** — Official Linux news, kernel information, certifications.
 
-- **Bash Guide for Beginners** — Learn shell scripting fundamentals.
-  https://www.gnu.org/software/bash/manual/
+- **[Bash Guide for Beginners](https://www.gnu.org/software/bash/manual/)** — Learn shell scripting fundamentals.
 
 ---
 

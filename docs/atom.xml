@@ -140,64 +140,51 @@
 &lt;p&gt;Essential software for Linux workflow:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;sway&lt;&#x2F;strong&gt; — Tiling Wayland compositor. Minimal, powerful window manager for X11&#x2F;Wayland.
-https:&#x2F;&#x2F;swaywm.org&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;swaywm.org&quot;&gt;sway&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt; — Tiling Wayland compositor. Minimal, powerful window manager for X11&#x2F;Wayland.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;alacritty&lt;&#x2F;strong&gt; — GPU-accelerated terminal emulator. Fast, simple, cross-platform.
-https:&#x2F;&#x2F;github.com&#x2F;alacritty&#x2F;alacritty&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;alacritty&#x2F;alacritty&quot;&gt;alacritty&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt; — GPU-accelerated terminal emulator. Fast, simple, cross-platform.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;neovim&lt;&#x2F;strong&gt; — Hyperextensible Vim-based text editor. Modern, scriptable, fast.
-https:&#x2F;&#x2F;neovim.io&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;neovim.io&quot;&gt;neovim&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt; — Hyperextensible Vim-based text editor. Modern, scriptable, fast.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;fish&lt;&#x2F;strong&gt; — User-friendly command line shell. Smart completions and syntax highlighting.
-https:&#x2F;&#x2F;fishshell.com&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;fishshell.com&quot;&gt;fish&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt; — User-friendly command line shell. Smart completions and syntax highlighting.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;fzf&lt;&#x2F;strong&gt; — Fuzzy finder for command line. Search files, history, processes quickly.
-https:&#x2F;&#x2F;github.com&#x2F;junegunn&#x2F;fzf&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;junegunn&#x2F;fzf&quot;&gt;fzf&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt; — Fuzzy finder for command line. Search files, history, processes quickly.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;communities&quot;&gt;Communities&lt;&#x2F;h2&gt;
 &lt;p&gt;Connect with Linux and ArchBang communities:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;r&#x2F;archlinux&lt;&#x2F;strong&gt; — Official Arch Linux subreddit. Ask questions, share setups, get help.
-https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;archlinux&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;archlinux&quot;&gt;r&#x2F;archlinux&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt; — Official Arch Linux subreddit. Ask questions, share setups, get help.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;r&#x2F;swaywm&lt;&#x2F;strong&gt; — Sway window manager community. Discussion, tips, rice screenshots.
-https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;swaywm&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;swaywm&quot;&gt;r&#x2F;swaywm&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt; — Sway window manager community. Discussion, tips, rice screenshots.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Arch Linux Forums&lt;&#x2F;strong&gt; — Official support and discussion forums.
-https:&#x2F;&#x2F;bbs.archlinux.org&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;bbs.archlinux.org&quot;&gt;Arch Linux Forums&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt; — Official support and discussion forums.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;ArchBang Forum&lt;&#x2F;strong&gt; — ArchBang-specific community and support.
-https:&#x2F;&#x2F;archbang.org&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;archbang.org&quot;&gt;ArchBang Forum&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt; — ArchBang-specific community and support.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;curated-resources&quot;&gt;Curated Resources&lt;&#x2F;h2&gt;
 &lt;p&gt;Guides, documentation, and learning materials:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Arch Linux Wiki&lt;&#x2F;strong&gt; — Comprehensive documentation for Arch and ArchBang.
-https:&#x2F;&#x2F;wiki.archlinux.org&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;wiki.archlinux.org&quot;&gt;Arch Linux Wiki&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt; — Comprehensive documentation for Arch and ArchBang.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Linux from Scratch&lt;&#x2F;strong&gt; — Build a Linux system from source. Deep learning resource.
-https:&#x2F;&#x2F;www.linuxfromscratch.org&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.linuxfromscratch.org&quot;&gt;Linux from Scratch&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt; — Build a Linux system from source. Deep learning resource.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;The Linux Foundation&lt;&#x2F;strong&gt; — Official Linux news, kernel information, certifications.
-https:&#x2F;&#x2F;www.linuxfoundation.org&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.linuxfoundation.org&quot;&gt;The Linux Foundation&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt; — Official Linux news, kernel information, certifications.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Bash Guide for Beginners&lt;&#x2F;strong&gt; — Learn shell scripting fundamentals.
-https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;bash&#x2F;manual&#x2F;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;bash&#x2F;manual&#x2F;&quot;&gt;Bash Guide for Beginners&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt; — Learn shell scripting fundamentals.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;hr &#x2F;&gt;
