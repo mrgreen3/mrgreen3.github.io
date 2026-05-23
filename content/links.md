@@ -10,7 +10,7 @@ Useful resources and links related to Linux, ArchBang, and system administration
 
 Essential software for Linux workflow:
 
-- **[sway](https://swaywm.org)** — Tiling Wayland compositor. Minimal, powerful window manager for X11/Wayland.
+- **[sway](https://swaywm.org)** — Tiling Wayland compositor. Minimal, powerful window manager for Wayland.
 
 - **[alacritty](https://github.com/alacritty/alacritty)** — GPU-accelerated terminal emulator. Fast, simple, cross-platform.
 
@@ -29,8 +29,6 @@ Connect with Linux and ArchBang communities:
 - **[r/swaywm](https://reddit.com/r/swaywm)** — Sway window manager community. Discussion, tips, rice screenshots.
 
 - **[Arch Linux Forums](https://bbs.archlinux.org)** — Official support and discussion forums.
-
-- **[ArchBang Forum](https://archbang.org)** — ArchBang-specific community and support.
 
 ## Curated Resources
 
