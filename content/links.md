@@ -1,6 +1,7 @@
 +++
 title = "Links"
 date = 2026-03-19
+path = "links"
 +++
 
 Useful resources and links related to Linux, ArchBang, and system administration.

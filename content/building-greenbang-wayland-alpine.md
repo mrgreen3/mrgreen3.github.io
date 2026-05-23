@@ -1,11 +1,10 @@
 +++
 title = "Building GreenBang: A Wayland-First Alpine Linux Live ISO"
 date = 2026-04-03
-draft = false
-aliases = ["/posts/2026-04-03-building-greenbang-wayland-alpine/"]
+path = "building-greenbang-wayland-alpine"
 
 [taxonomies]
-tags = ["linux", "alpine", "wayland", "labwc"]
+tags = ["alpine", "labwc", "linux", "wayland"]
 +++
 
 I wanted a systemd-free version of ArchBang. Something minimal, keyboard-driven, and built on Alpine Linux instead. The name—GreenBang—references Alpine's green branding and my own username, and it became the foundation for a distro that strips away the overhead while keeping the philosophy: intentional, lean, dark Wayland desktop with no cruft.
