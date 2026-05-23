@@ -64,3 +64,11 @@ That's the part that's actually useful. Not that Claude can push a markdown file
 Claude can now read any file in this repo, edit it, and push the result. New posts, page edits, link updates — all from a chat conversation. The SHA problem is gone because Claude retrieves it as part of reading the file.
 
 The setup is clean. One OAuth connection, no tokens, no workarounds. Claude did the legwork. I made a cup of tea.
+
+## One More Thing
+
+There was a final gotcha that nearly didn't make it into this post. Adding the MCP server URL in claude.ai and authenticating via OAuth wasn't quite enough — write access was still being blocked with a 403. The missing step was installing the GitHub App itself on your account, which is separate from the OAuth flow.
+
+Go to `https://github.com/settings/installations`, find the Claude GitHub MCP Connector, and make sure it's installed on your account with access to the relevant repositories. Without that step the connector can read but not write, and Claude will hit a wall every time it tries to push anything.
+
+Once that's done, everything works as advertised.
