@@ -9,4 +9,4 @@ tags = ["test"]
 
 This is a test post to verify the blog deploy pipeline works. If you're reading this, it worked.
 
-`>_`
+`^!`
