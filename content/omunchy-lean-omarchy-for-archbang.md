@@ -9,7 +9,7 @@ tags = ["archbang", "linux", "wayland", "wm", "desktop", "tools"]
 
 [Omarchy](https://omarchy.org) is a good idea with a lot of opinions attached. I like the idea — a tiling Wayland desktop that arrives configured instead of asking you twenty questions — and I don't want the rest of the meal. So I've been building Omunchy: a lean, Omarchy-inspired desktop delivered as an Arch-based live ISO built on ArchBang's archiso conventions, with an installer that copies that live system to disk.
 
-The code is at [github.com/mrgreen3/Omunchy](https://github.com/mrgreen3/Omunchy).
+The ISO lives on SourceForge: [sourceforge.net/projects/archbang/files/Omunchy](https://sourceforge.net/projects/archbang/files/Omunchy/). The code is at [github.com/mrgreen3/Omunchy](https://github.com/mrgreen3/Omunchy).
 
 ## Three compositors in two weeks
 
@@ -56,7 +56,7 @@ On the live ISO, `omunchy-welcome` shows the `Super+K` keybind hint at login and
 
 ## Status
 
-No ISO is published yet. There are no releases on the repo and no build artefacts in it; the profile (`iso_name = "omunchy-rc"`) is there, but I haven't put a binary up.
+The ISO is up on SourceForge: `omunchy-rc-111026-x86_64.iso`, built 11 October, 1.3 GB, in the ArchBang project's Omunchy folder. It's an `-rc` and it's early — treat it as a beta. The repo itself carries no tagged releases and no build artefacts; the source is code, the ISO lives on SourceForge.
 
 `obinstall` is the least proven part and I'd rather say so — the README's own words are "untested on real hardware: try it in a VM first." The disk copy, the LUKS install and the greeter handover are all in that category. The desktop configuration is the part that has had real use; the installer is where the risk sits.
 
