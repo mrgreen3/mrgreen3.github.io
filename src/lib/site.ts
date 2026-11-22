@@ -1,4 +1,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
+import { getImage } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import path from 'node:path';
 import { zolaSlug } from './zola-html.mjs';
 
 export const SITE = {
@@ -58,9 +61,33 @@ export async function tags() {
 export const sortedTags = (p: Post) =>
   [...p.data.tags].sort().filter((t, i, a) => a.findIndex((x) => x.toLowerCase() === t.toLowerCase()) === i);
 
+// Co-located post images, keyed by absolute path.
+const images = Object.fromEntries(
+  Object.entries(import.meta.glob<{ default: ImageMetadata }>(
+    '/src/content/blog/**/*.{png,jpg,jpeg,webp,gif,avif}', { eager: true },
+  )).map(([k, v]) => [path.join(process.cwd(), k), v.default]),
+);
+
+// Rendered HTML with Astro's image placeholders swapped for optimised <img> tags.
+export async function postHtml(p: Post, absolute = false) {
+  let html = p.rendered?.html ?? '';
+  const dir = path.dirname(path.resolve(p.filePath ?? ''));
+  for (const m of [...html.matchAll(/<img __ASTRO_IMAGE_="([^"]*)"[^>]*>/g)]) {
+    const { src, alt = '' } = JSON.parse(m[1].replace(/&quot;/g, '"').replace(/&#x27;/g, "'").replace(/&amp;/g, '&'));
+    const meta = images[path.resolve(dir, src)];
+    if (!meta) continue;
+    const img = await getImage({ src: meta });
+    const url = absolute ? new URL(img.src, SITE.url).href : img.src;
+    const esc = (v: string) => String(v).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+    html = html.replace(m[0],
+      `<img src="${url}" alt="${esc(alt)}" width="${img.attributes.width ?? meta.width}" height="${img.attributes.height ?? meta.height}" loading="lazy" decoding="async">`);
+  }
+  return html;
+}
+
 // Front-page summary: leading paragraphs before the first heading, max 2.
-export function summary(p: Post) {
-  const html = p.rendered?.html ?? '';
+export async function summary(p: Post) {
+  const html = await postHtml(p);
   const head = html.split(/<h[1-6][\s>]/)[0];
   const paras = head.match(/<p>[\s\S]*?<\/p>/g) ?? [];
   return paras.slice(0, 2).join('\n');

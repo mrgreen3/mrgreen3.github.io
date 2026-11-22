@@ -4,7 +4,7 @@ import Tags from './Tags.astro';
 import { permalink, summary, ymd, type Post } from '../lib/site';
 interface Props { page: Post; short?: boolean }
 const { page, short = false } = Astro.props;
-const intro = short ? summary(page) : '';
+const intro = short ? await summary(page) : '';
 const { Content } = await render(page);
 ---
 <h1 class="post-title"><a href={permalink(page)}>{page.data.title}</a></h1>

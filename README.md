@@ -26,6 +26,21 @@ draft: true
 
 `slug` is the URL path. Pages without a `date` are built but stay off the front page and feeds. Only top-level posts (no `/` in the slug) appear on the front page.
 
+## Images
+
+Put images in a folder next to the post and link them relatively:
+
+```
+src/content/blog/my-post.md
+src/content/blog/my-post/desk.jpg
+```
+
+```markdown
+![my desk](./my-post/desk.jpg)
+```
+
+They are converted to WebP with width/height set at build time; feeds and front-page summaries get the same optimised file. Anything in `public/` (e.g. `/mango.png`) is served as-is.
+
 ## CI / Deployment
 
 GitHub Actions (`.github/workflows/deploy.yml`) runs `npm ci` and `npm run build` on every push to `main`, then deploys `dist/` to GitHub Pages.

@@ -1,12 +1,14 @@
-import { SITE, permalink, type Post } from './site';
+import { SITE, permalink, postHtml, type Post } from './site';
 
 const esc = (s: string) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;');
-const html = (p: Post) => esc(p.rendered?.html ?? '');
+
 const xml = (body: string) =>
   new Response(body, { headers: { 'Content-Type': 'application/xml; charset=utf-8' } });
 
-export function rss(pages: Post[], self: string, title = SITE.title) {
+export async function rss(pages: Post[], self: string, title = SITE.title) {
+  const body = new Map(await Promise.all(pages.map(async (p) => [p.id, esc(await postHtml(p, true))] as const)));
+  const html = (p: Post) => body.get(p.id) ?? '';
   const updated = pages[0]?.data.date?.toUTCString().replace('GMT', '+0000') ?? '';
   const items = pages.map((p) => `
       <item>
@@ -34,7 +36,9 @@ export function rss(pages: Post[], self: string, title = SITE.title) {
 
 const iso = (d: Date) => d.toISOString().replace(/\.\d{3}Z$/, '+00:00');
 
-export function atom(pages: Post[], self: string, title = SITE.title) {
+export async function atom(pages: Post[], self: string, title = SITE.title) {
+  const body = new Map(await Promise.all(pages.map(async (p) => [p.id, esc(await postHtml(p, true))] as const)));
+  const html = (p: Post) => body.get(p.id) ?? '';
   const entries = pages.map((p) => `
     <entry xml:lang="en">
         <title>${esc(p.data.title)}</title>
