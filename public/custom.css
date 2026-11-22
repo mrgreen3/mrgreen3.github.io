@@ -44,3 +44,65 @@ blockquote {
 .post-title {
   --border: 2px solid var(--accent);
 }
+
+/* refresh */
+body, code, pre {
+  font-family: "JetBrains Mono Variable", Hack, "DejaVu Sans Mono", monospace;
+}
+
+body {
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 920px;
+}
+
+@media (max-width: 899px) {
+  .post { max-width: 720px; }
+}
+
+.post-content p,
+.post-content li {
+  margin-bottom: 0.9em;
+}
+
+.logo {
+  background: none;
+  color: var(--accent) !important;
+  padding: 0;
+  font-weight: bold;
+}
+
+.prompt-user { color: var(--accent); }
+.prompt-path { color: var(--color); }
+
+.cursor {
+  display: inline-block;
+  width: 0.6em;
+  height: 1.1em;
+  margin-left: 0.3em;
+  background: var(--accent);
+  vertical-align: text-bottom;
+  animation: blink 1.1s steps(1) infinite;
+}
+
+@keyframes blink { 50% { opacity: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor { animation: none; }
+}
+
+.menu__inner li.active a {
+  color: var(--color);
+  text-decoration: none;
+  border-bottom: 2px solid var(--accent);
+}
+
+.footer-links { margin: 0 1em; }
+.footer-links a { margin-right: 1em; }
+
+pre {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}

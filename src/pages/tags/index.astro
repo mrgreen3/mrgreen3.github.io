@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import { tags, SITE } from '../../lib/site';
 const terms = await tags();
 ---
-<Base url={`${SITE.url}/tags/`}>
+<Base url={`${SITE.url}/tags/`} title="Tags">
     <div class="post">
         <h1 class="post-title">all tags</h1>
         <ul>

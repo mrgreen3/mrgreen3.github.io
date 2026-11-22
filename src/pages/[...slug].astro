@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import PostBody from '../components/PostBody.astro';
-import { allPages, listed, permalink } from '../lib/site';
+import { allPages, describe, listed, permalink } from '../lib/site';
 
 export async function getStaticPaths() {
   const front = await listed();
@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 }
 const { page, higher, lower } = Astro.props;
 ---
-<Base url={permalink(page)} description={page.data.description ?? ''}>
+<Base url={permalink(page)} title={page.data.title} description={describe(page)}>
     <div class="post">
         <PostBody page={page} />
         {(higher || lower) && (

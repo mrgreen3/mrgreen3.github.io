@@ -5,7 +5,7 @@ interface Props { pages: Post[]; prev?: string; next?: string }
 const { pages, prev, next } = Astro.props;
 ---
 <div class="posts">
-    {pages.map((page) => <div class="post on-list"><PostBody page={page} /></div>)}
+    {pages.map((page) => <div class="post on-list"><PostBody page={page} short /></div>)}
     <div class="pagination">
         <div class="pagination__buttons">
             {prev && (

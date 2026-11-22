@@ -1,12 +1,17 @@
 ---
+import '@fontsource-variable/jetbrains-mono';
 import { SITE } from '../lib/site';
-interface Props { url?: string; description?: string }
-const { url = `${SITE.url}/`, description = '' } = Astro.props;
+interface Props { url?: string; description?: string; title?: string }
+const { url = `${SITE.url}/`, description = SITE.description, title } = Astro.props;
+const fullTitle = title ? `${title} — ${SITE.title}` : SITE.title;
+const here = Astro.url.pathname;
+const active = (u: string) =>
+  u === '/' ? here === '/' || here.startsWith('/page/') : here === u || here.startsWith(u + '/');
 ---
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>{SITE.title}</title>
+    <title>{fullTitle}</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta name="robots" content="noodp"/>
@@ -16,12 +21,12 @@ const { url = `${SITE.url}/`, description = '' } = Astro.props;
     <link rel="stylesheet" href="/font-hack-subset.css">
     <meta name="description" content={description}>
     <meta property="og:description" content={description}>
-    <meta property="og:title" content={SITE.title}>
+    <meta property="og:title" content={fullTitle}>
     <meta property="og:type" content="article">
     <meta property="og:url" content={url}>
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:description" content={description}>
-    <meta name="twitter:title" content={SITE.title}>
+    <meta name="twitter:title" content={fullTitle}>
     <meta property="twitter:domain" content="mrgreen.blog">
     <meta property="twitter:url" content={url}>
     <link rel="alternate" type="application/rss+xml" title={`${SITE.title} RSS Feed`} href={`${SITE.url}/rss.xml`} />
@@ -35,13 +40,13 @@ const { url = `${SITE.url}/`, description = '' } = Astro.props;
         <div class="header__inner">
             <div class="header__logo">
                 <a href={SITE.url} style="text-decoration: none;">
-                    <div class="logo">{SITE.title}</div>
+                    <div class="logo" aria-label={SITE.title}><span class="prompt-user">mrgreen@blog</span>:<span class="prompt-path">~</span>$<span class="cursor" aria-hidden="true"></span></div>
                 </a>
             </div>
         </div>
         <nav class="menu">
             <ul class="menu__inner">
-                {SITE.menu.map((m) => <li><a href={m.url}>{m.name}</a></li>)}
+                {SITE.menu.map((m) => <li class:list={[{ active: active(m.url) }]}><a href={m.url}>{m.name}</a></li>)}
             </ul>
         </nav>
     </header>
@@ -52,6 +57,9 @@ const { url = `${SITE.url}/`, description = '' } = Astro.props;
         <div class="footer__inner">
             <div class="copyright">
                 <span>© {new Date().getFullYear()} {SITE.author}</span>
+                <span class="footer-links">
+                    {SITE.links.map((l) => <a href={l.url}>{l.name}</a>)}
+                </span>
                 <span class="copyright-theme">
                     <span class="copyright-theme-sep">:: </span>
                     Theme: <a href="https://github.com/pawroman/zola-theme-terminimal/">Terminimal</a> by pawroman

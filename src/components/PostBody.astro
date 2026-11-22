@@ -1,9 +1,10 @@
 ---
 import { render } from 'astro:content';
 import Tags from './Tags.astro';
-import { permalink, ymd, type Post } from '../lib/site';
-interface Props { page: Post }
-const { page } = Astro.props;
+import { permalink, summary, ymd, type Post } from '../lib/site';
+interface Props { page: Post; short?: boolean }
+const { page, short = false } = Astro.props;
+const intro = short ? summary(page) : '';
 const { Content } = await render(page);
 ---
 <h1 class="post-title"><a href={permalink(page)}>{page.data.title}</a></h1>
@@ -11,6 +12,16 @@ const { Content } = await render(page);
     <span class="post-date">{ymd(page.data.date)}</span>
 </div>
 {" "}<Tags page={page} />
+{short ? (
+<div class="post-content" set:html={intro} />
+<div>
+    <a class="read-more button" href={permalink(page)}>
+        <span class="button__text">Read more</span>&nbsp;
+        <span class="button__icon">&#8617;&#xFE0E;</span>
+    </a>
+</div>
+) : (
 <div class="post-content">
     <Content />
 </div>
+)}

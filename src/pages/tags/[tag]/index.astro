@@ -8,7 +8,7 @@ export async function getStaticPaths() {
 }
 const { name, pages } = Astro.props;
 ---
-<Base url={`${SITE.url}/tags/${Astro.params.tag}/`}>
+<Base url={`${SITE.url}/tags/${Astro.params.tag}/`} title={`Tag: ${name}`}>
     <div class="post">
         <h1 class="post-title">
             tag: #{name} ({pages.length} post{pages.length === 1 ? '' : 's'})

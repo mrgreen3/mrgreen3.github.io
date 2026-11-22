@@ -6,6 +6,11 @@ export const SITE = {
   title: "Mr Green's Blog",
   description: 'Linux, ArchBang, and minimal workflows.',
   author: 'Mr Green',
+  links: [
+    { name: 'github', url: 'https://github.com/mrgreen3' },
+    { name: 'archbang', url: 'https://archbang.org' },
+    { name: 'rss', url: '/rss.xml' },
+  ],
   menu: [
     { name: 'blog', url: '/' },
     { name: 'tags', url: '/tags' },
@@ -52,3 +57,19 @@ export async function tags() {
 
 export const sortedTags = (p: Post) =>
   [...p.data.tags].sort().filter((t, i, a) => a.findIndex((x) => x.toLowerCase() === t.toLowerCase()) === i);
+
+// Front-page summary: leading paragraphs before the first heading, max 2.
+export function summary(p: Post) {
+  const html = p.rendered?.html ?? '';
+  const head = html.split(/<h[1-6][\s>]/)[0];
+  const paras = head.match(/<p>[\s\S]*?<\/p>/g) ?? [];
+  return paras.slice(0, 2).join('\n');
+}
+
+export function describe(p: Post) {
+  if (p.data.description) return p.data.description;
+  const first = (p.rendered?.html ?? '').match(/<p>([\s\S]*?)<\/p>/)?.[1] ?? '';
+  const text = first.replace(/<[^>]+>/g, '').replace(/&#x27;|&#39;/g, "'").replace(/&quot;/g, '"')
+    .replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+  return text.length > 160 ? text.slice(0, 157).replace(/\s+\S*$/, '') + '…' : text;
+}
