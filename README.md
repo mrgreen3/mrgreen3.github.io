@@ -41,6 +41,17 @@ src/content/blog/my-post/desk.jpg
 
 They are converted to WebP with width/height set at build time; feeds and front-page summaries get the same optimised file. Anything in `public/` (e.g. `/mango.png`) is served as-is.
 
+## Video
+
+Paste a YouTube embed straight into the Markdown (privacy-friendly domain, full width at 16:9 via `custom.css`):
+
+```html
+<iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+  title="What the video is" allowfullscreen></iframe>
+```
+
+`VIDEO_ID` is the part after `watch?v=` in the YouTube link.
+
 ## CI / Deployment
 
 GitHub Actions (`.github/workflows/deploy.yml`) runs `npm ci` and `npm run build` on every push to `main`, then deploys `dist/` to GitHub Pages.

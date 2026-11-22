@@ -106,3 +106,13 @@ pre {
   border: 1px solid var(--border-color);
   border-radius: 4px;
 }
+
+.post-content iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin: 25px 0;
+}
