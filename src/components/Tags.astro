@@ -1,0 +1,17 @@
+---
+import { sortedTags, tagUrl, type Post } from '../lib/site';
+interface Props { page: Post; short?: boolean }
+const { page, short = false } = Astro.props;
+const tags = sortedTags(page);
+---
+{tags.length > 0 && (
+    <span class="post-tags-inline">
+        {short ? ':: ' : <Fragment set:html=":: tags:&nbsp;" />}
+        {tags.map((t, i) => (
+            <Fragment>
+                <a class="post-tag" href={tagUrl(t)}>#{t}</a>
+                {i < tags.length - 1 && <Fragment set:html={short ? ',' : '&nbsp;'} />}
+            </Fragment>
+        ))}
+    </span>
+)}

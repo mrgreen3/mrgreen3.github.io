@@ -1,0 +1,16 @@
+---
+import { render } from 'astro:content';
+import Tags from './Tags.astro';
+import { permalink, ymd, type Post } from '../lib/site';
+interface Props { page: Post }
+const { page } = Astro.props;
+const { Content } = await render(page);
+---
+<h1 class="post-title"><a href={permalink(page)}>{page.data.title}</a></h1>
+<div class="post-meta-inline">
+    <span class="post-date">{ymd(page.data.date)}</span>
+</div>
+{" "}<Tags page={page} />
+<div class="post-content">
+    <Content />
+</div>

@@ -1,0 +1,28 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Tags from '../../../components/Tags.astro';
+import { tags, permalink, ymd, SITE } from '../../../lib/site';
+
+export async function getStaticPaths() {
+  return (await tags()).map(([slug, t]) => ({ params: { tag: slug }, props: t }));
+}
+const { name, pages } = Astro.props;
+---
+<Base url={`${SITE.url}/tags/${Astro.params.tag}/`}>
+    <div class="post">
+        <h1 class="post-title">
+            tag: #{name} ({pages.length} post{pages.length === 1 ? '' : 's'})
+        </h1>
+        <a href={`${SITE.url}/tags/`}>Show all tags</a>
+        <ul>
+            {pages.map((page) => (
+                <li class="post-list">
+                    <a href={permalink(page)}>
+                        <span class="post-date">{ymd(page.data.date)}</span>
+                        :: <span class="post-list-title">{page.data.title}</span></a>
+                    <Tags page={page} short />
+                </li>
+            ))}
+        </ul>
+    </div>
+</Base>

@@ -1,0 +1,23 @@
+---
+import PostBody from './PostBody.astro';
+import { type Post } from '../lib/site';
+interface Props { pages: Post[]; prev?: string; next?: string }
+const { pages, prev, next } = Astro.props;
+---
+<div class="posts">
+    {pages.map((page) => <div class="post on-list"><PostBody page={page} /></div>)}
+    <div class="pagination">
+        <div class="pagination__buttons">
+            {prev && (
+                <span class="button previous">
+                    <a href={prev}><span class="button__icon">←</span>&nbsp;<span class="button__text">Newer posts</span></a>
+                </span>
+            )}
+            {next && (
+                <span class="button next">
+                    <a href={next}><span class="button__text">Older posts</span>&nbsp;<span class="button__icon">→</span></a>
+                </span>
+            )}
+        </div>
+    </div>
+</div>

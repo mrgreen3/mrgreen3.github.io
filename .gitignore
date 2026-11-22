@@ -1,3 +1,5 @@
-public/
+dist/
+.astro/
+node_modules/
 drafts/*.md
 !drafts/README.md

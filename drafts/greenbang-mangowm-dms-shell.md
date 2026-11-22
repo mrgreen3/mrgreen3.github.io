@@ -1,11 +1,9 @@
-+++
-title = "GreenBang: A Heavyweight ArchBang with MangoWM and DMS Shell"
-date = 2026-08-15
-path = "greenbang-mangowm-dms-shell"
-
-[taxonomies]
-tags = ["archbang", "linux", "wayland", "mangowm", "dms", "iso"]
-+++
+---
+title: "GreenBang: A Heavyweight ArchBang with MangoWM and DMS Shell"
+date: "2026-08-15"
+slug: "greenbang-mangowm-dms-shell"
+tags: ["archbang", "linux", "wayland", "mangowm", "dms", "iso"]
+---
 
 FruitBang was the first cut — ArchBang with MangoWM swapped in. GreenBang is the evolution: a heavyweight live ISO that pairs MangoWM with DankMaterialShell (DMS) for a fuller desktop experience without leaving the ArchBang family.
 

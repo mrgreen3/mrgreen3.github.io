@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro';
+import { tags, SITE } from '../../lib/site';
+const terms = await tags();
+---
+<Base url={`${SITE.url}/tags/`}>
+    <div class="post">
+        <h1 class="post-title">all tags</h1>
+        <ul>
+            {terms.map(([slug, t]) => (
+                <li class="tag-list">
+                    <a href={`${SITE.url}/tags/${slug}/`}>
+                        {t.name} ({t.pages.length} post{t.pages.length === 1 ? '' : 's'})
+                    </a>
+                </li>
+            ))}
+        </ul>
+    </div>
+</Base>

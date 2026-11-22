@@ -1,0 +1,64 @@
+---
+import { SITE } from '../lib/site';
+interface Props { url?: string; description?: string }
+const { url = `${SITE.url}/`, description = '' } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{SITE.title}</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="robots" content="noodp"/>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/color/green.css">
+    <link rel="stylesheet" href="/color/background_dark.css">
+    <link rel="stylesheet" href="/font-hack-subset.css">
+    <meta name="description" content={description}>
+    <meta property="og:description" content={description}>
+    <meta property="og:title" content={SITE.title}>
+    <meta property="og:type" content="article">
+    <meta property="og:url" content={url}>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content={description}>
+    <meta name="twitter:title" content={SITE.title}>
+    <meta property="twitter:domain" content="mrgreen.blog">
+    <meta property="twitter:url" content={url}>
+    <link rel="alternate" type="application/rss+xml" title={`${SITE.title} RSS Feed`} href={`${SITE.url}/rss.xml`} />
+    <link rel="alternate" type="application/atom+xml" title={`${SITE.title} Atom Feed`} href={`${SITE.url}/atom.xml`} />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon-green.png">
+    <link rel="stylesheet" href="/custom.css">
+</head>
+<body class="">
+<div class="container">
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a href={SITE.url} style="text-decoration: none;">
+                    <div class="logo">{SITE.title}</div>
+                </a>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul class="menu__inner">
+                {SITE.menu.map((m) => <li><a href={m.url}>{m.name}</a></li>)}
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <slot />
+    </div>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="copyright">
+                <span>© {new Date().getFullYear()} {SITE.author}</span>
+                <span class="copyright-theme">
+                    <span class="copyright-theme-sep">:: </span>
+                    Theme: <a href="https://github.com/pawroman/zola-theme-terminimal/">Terminimal</a> by pawroman
+                </span>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

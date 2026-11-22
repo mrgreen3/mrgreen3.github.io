@@ -1,0 +1,29 @@
+---
+import Base from '../../layouts/Base.astro';
+import Listing from '../../components/Listing.astro';
+import { listed, SITE } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const all = await listed();
+  const count = Math.ceil(all.length / SITE.perPage);
+  return Array.from({ length: count }, (_, i) => ({
+    params: { n: String(i + 1) },
+    props: { n: i + 1, count, pages: all.slice(i * SITE.perPage, (i + 1) * SITE.perPage) },
+  }));
+}
+const { n, count, pages } = Astro.props;
+const prev = n > 1 ? (n === 2 ? `${SITE.url}/` : `${SITE.url}/page/${n - 1}/`) : undefined;
+const next = n < count ? `${SITE.url}/page/${n + 1}/` : undefined;
+const home = `${SITE.url}/`;
+---
+{n === 1 ? (
+<Fragment set:html={`<!doctype html>
+<meta charset="utf-8">
+<link rel="canonical" href="${home}">
+<meta http-equiv="refresh" content="0; url=${home}">
+<title>Redirect</title>
+<p><a href="${home}">Click here</a> to be redirected.</p>
+`} />
+) : (
+<Base><Listing pages={pages} prev={prev} next={next} /></Base>
+)}

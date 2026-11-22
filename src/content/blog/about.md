@@ -1,0 +1,9 @@
+---
+title: "About"
+date: "2026-03-19"
+slug: "about"
+---
+
+Linux enthusiast focused on ArchBang, system configuration, and minimal workflows.
+
+This blog documents my experiments, setups, and discoveries as I work with Linux distributions and tools.

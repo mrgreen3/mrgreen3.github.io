@@ -1,0 +1,9 @@
+---
+import Base from '../layouts/Base.astro';
+import Listing from '../components/Listing.astro';
+import { listed, SITE } from '../lib/site';
+const all = await listed();
+const pages = all.slice(0, SITE.perPage);
+const next = all.length > SITE.perPage ? `${SITE.url}/page/2/` : undefined;
+---
+<Base><Listing pages={pages} next={next} /></Base>
